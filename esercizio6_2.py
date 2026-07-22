@@ -37,3 +37,8 @@ while True: #finchè l'utente non scrive "EXIT"
         mia_rubrica.stampa_dati(input("Nome contatto da stampare: ")) #chiedo il nome del contatto da stampare
     else :
         print(f"L'azione" ,azione,"non esiste. Riprova.") #oppure se l'azione che vorrei fare non esiste dico all'utente di riprovare finchè non rispondo 'EXIT'
+#Per controllare le azioni devo sempre aprire e poi:
+#per AGGIUNGI: aggiungi e salva
+#per RIMUOVI: rimuovi e salva
+#per SALVA: salva
+#per STAMPA: stampa e salva
