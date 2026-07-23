@@ -65,8 +65,8 @@ def main5_1() :
     tempo_medio = sum(tempi_soluzioni) / len(tempi_soluzioni) #calcolo il tempo medio sommando tutti i tempi delle soluzioni diviso la quantità dei tempi salvati
     print("Tempo medio per trovare una soluzione:", tempo_medio ,"secondi")
     print('Soluzioni ripetute: ', len(duplicati))
-if __name__ == "__main__": #serve a far partire il programma principale
-    main5_1()
+#serve a far partire il programma principale
+main5_1()
 #5.5
 #Generalizzare il programma per risolvere una scacchiera di qualunque dimensione NxN
 #Le righe nuove o modificate sono la 91 e la 93 e non sevre ripetere le funzioni già scritte ma l'ho fatto per mettere in evidenza che il punto chiedeva una dimensione diversa
@@ -104,8 +104,8 @@ def main5_5() :
                 soluzioni += 1 #ogni volta che trovo una combinazione valida incremento il numero delle soluzioni   
                 start_time = time.time() #faccio ripartire nuovamente il timer
                 combinazioni_valide.append(soluzione_prova) #e inserisco la nuova soluzione valida (evito ripetizioni)
-if __name__ == "__main__" : #serve a far partire il programma principale
-    main5_5()
+#serve a far partire il programma principale
+main5_5()
 #5.6
 #Trovare quale è la scacchiera con lato N più grande possibile per cui si riesce a trovare 1 soluzione in meno di 15s
 def cerca_singola_soluzione(N) : 
@@ -132,8 +132,8 @@ def main5_6() :
             print('La dimensione N massima risolvibile sotto i 15 secondi è: N = ',ultimo_N_valido) #stampa l'N finale
             print('Tempo impiegato per N=',ultimo_N_valido,':' ,ultimo_tempo,': s.') #stampa il suo tempo
             break #bisogna chiudere l'else sennò fa un loop
-if __name__ == "__main__" : #come prima chiamo il main
-    main5_6()  #attenzione che i main hanno nomi diversi per evitare di avere dei KeyError e quindi per usare il main corretto
+#come prima chiamo il main
+main5_6()  #attenzione che i main hanno nomi diversi per evitare di avere dei KeyError e quindi per usare il main corretto
 #!Ogni volta la dimensione che avvio il programma varia per come è costruito il programma (in genere N>15)!
 #5.7
 #Ogni soluzione è ‘simmetrica’ per rotazioni della scacchiera 8x8 di 90, 180 e 270 gradi. Scrivere delle funzioni che, una volta trovata una soluzione alla scacchiera, costruiscano le 4 soluzioni simmetriche per rotazione. Trovate 5 soluzioni “uniche” e le rispettive soluzioni simmetriche per rotazione per una scacchiera 8x8
@@ -177,7 +177,6 @@ def main5_7() :
             combinazioni_valide.append(soluzione_prova) #inserisco la nuova soluzione valida                                
         else : #oppure
             pass 
-if __name__ == "__main__" : 
-    main5_7()
+main5_7()
 #Per fare prima meglio commentare il punto 5.6 per verificare gli altri esercizi
 #giusto l'ultimo punto?
